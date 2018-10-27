@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>json2-mod Test</title>
+	</head>
+	<body>
+		<h1>json2-mod Test</h1>
+
+		<h2>Test</h2>
+		<pre>
+const json = {"pi": "3.14159265359", "e": "2.7182818284", "prime": [2, 3, 5, 7, 11, 13, 17, 19], "1+6": 7};
+const prettyJson = JSON2_mod.stringify(json, undefined, 2, true, "'");
+</pre>
+		<h2>Expected</h2>
+		<pre id="expected">{
+  pi: "3.14159265359",
+  e: "2.7182818284",
+  prime: [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19
+  ],
+  "1+6": 7
+}</pre>
+
+		<h2>Execution</h2>
+		<pre id="execution"></pre>
+
+		<h2>Test Result</h2>
+		<p id="result"></p>
+
+		<script type="text/javascript" src="json2-mod.js"></script>
+		<script>
+			(function() {
+			    const json = {"pi": "3.14159265359", "e": "2.7182818284", "prime": [2, 3, 5, 7, 11, 13, 17, 19], "1+6": 7};
+			    const prettyJson = JSON2_mod.stringify(json, undefined, 2, true, "'");
+                const expected = document.getElementById('expected');
+			    const execution = document.getElementById('execution');
+				const result = document.getElementById('result');
+                execution.innerText = prettyJson;
+				if (expected.innerText.trim() == execution.innerText.trim()) {
+					result.innerText = "Success!"
+				} else {
+					result.innerText = "Failed."
+				}
+		    }.call(this));
+		</script>
+	</body>
+</html>
