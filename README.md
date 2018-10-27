@@ -56,11 +56,7 @@ In both cases, you would get this in the console:
 - `value`: any JavaScript value, usually an object or array.
 - `replacer`: an optional parameter that determines how object values are stringified for objects. It can be a function or an array of strings.
 -`space`: an optional parameter that specifies the indentation of nested structures. If it is omitted, the text will be packed without extra whitespace. If it is a number, it will specify the number of spaces to indent at each level. If it is a string (such as '\t' or '&nbsp;'), it contains the characters used to indent at each level.
-- `dropQuotesOnKeys`:
-          an optional parameter to drop quotes on keys, when possible.
-          Useful to represent a Javascript object. Quotes will be
-          dropped only if the key can be declared as a valid Javascript
-          object. Do note that the output will not be valid JSON, but it will be valid Javascript.
+- `dropQuotesOnKeys`: an optional parameter to drop quotes on keys, when possible. Useful to represent a Javascript object. Quotes will be dropped only if the key can be declared as a valid Javascript object. Do note that the output will not be valid JSON, but it will be valid Javascript.
 `quoteType`: an optional parameter to specify the quote character. Defaults to double quote " however you can overwrite with a single quote '. Do note that the output will not be valid JSON, but it will be valid Javascript.
 
 This method produces a JSON text from a JavaScript value.
@@ -148,5 +144,6 @@ myData = JSON.parse('["Date(09/09/2001)"]', function (key, value) {
 ```
 
 # References
-Original version found here: https://github.com/douglascrockford/JSON-js
-JSON format description found here: http://json.org/
+Original version found here: https://github.com/douglascrockford/JSON-js.
+
+JSON format description found here: http://json.org/.
