@@ -45,11 +45,11 @@
                         it contains the characters used to indent at each level.
       
             dropQuotesOnKeys
-                  an optional parameter to drop quotes on keys, when possible.
-                  Useful to represent a Javascript object. Quotes will be
-                  dropped only if the key can be declared as a valid Javascript
-                  object. Do note that the output will not be valid JSON, but
-                              it will be valid Javascript.
+                        an optional parameter to specify the quote character.
+                        Specify either `double` for " or `single` for '.
+                        Defaults to double quote however you can overwrite with
+                        a single quote. Do note that the output will not be valid
+                        JSON, but it will be valid Javascript.
 
             quoteType
                         an optional parameter to specify the quote character.

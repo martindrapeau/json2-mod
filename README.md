@@ -9,7 +9,7 @@ Online tool [JSON Beautifier](https://csvjson.com/json_beautifier) provides the 
 - Use single quotes instead of double quotes
 
 # Usage
-Unlike the original JSON2 implementation, JSON2_mod does not akways create a global variable. You can use it as a regular CommonJS module. You can also simply load it as a script in the browser in which case, the `JSON2_mod` global will get created.
+Unlike the original JSON2 implementation, JSON2_mod does not always create a global variable. You can use it as a regular CommonJS module. You can also simply load it as a script in the browser in which case, the `JSON2_mod` global will get created.
 
 json2-mod adds 2 extra arguments to function `stringify`: `dropQuotesOnKeys` and `quoteType`.
 
@@ -59,7 +59,7 @@ In both cases, you would get this in the console:
 - `replacer`: an optional parameter that determines how object values are stringified for objects. It can be a function or an array of strings.
 -`space`: an optional parameter that specifies the indentation of nested structures. If it is omitted, the text will be packed without extra whitespace. If it is a number, it will specify the number of spaces to indent at each level. If it is a string (such as '\t' or '&nbsp;'), it contains the characters used to indent at each level.
 - `dropQuotesOnKeys`: an optional parameter to drop quotes on keys, when possible. Useful to represent a Javascript object. Quotes will be dropped only if the key can be declared as a valid Javascript object. Do note that the output will not be valid JSON, but it will be valid Javascript.
-- `quoteType`: an optional parameter to specify the quote character. Specify either `double` or `single`. Defaults to `double` quote (") however you can overwrite with a `single` quote ('). Do note that the output will not be valid JSON if you use `single`, but it will be valid Javascript.
+- `quoteType`: an optional parameter to specify the quote character. Specify either `double` for " or `single` for '. Defaults to double quote however you can overwrite with a single quote. Do note that the output will not be valid JSON, but it will be valid Javascript.
 
 This method produces a JSON text from a JavaScript value.
 
