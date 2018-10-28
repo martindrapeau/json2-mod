@@ -1,12 +1,13 @@
 {
   "name": "json2-mod",
   "description": "Douglas Crawford's JSON2, augmented with extra options to stringify your JSON. Powers JSON Beautifier the online tool found at www.csvjson.com.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Douglas Crockford <douglas@crockford.com>",
   "contributors": ["Martin Drapeau <martindrapeau@gmail.com>"],
   "dependencies": { },
   "devDependencies": { },
   "main": "json2.js",
+  "keywords": ["json", "parse", "stringify", "json2", "crockford"],
   "repository": {
     "type": "git",
     "url": "git://github.com/martindrapeau/json2-mod.git"
