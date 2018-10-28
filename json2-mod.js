@@ -53,9 +53,10 @@
 
             quoteType
                         an optional parameter to specify the quote character.
+                        Use either `double` or `single`.
                         Defaults to double quote " however you can overwrite with
                         a single quote '. Do note that the output will not be valid
-                        JSON, but it will be valid Javascript.
+                        JSON is you use `single`, but it will be valid Javascript.
       
             This method produces a JSON text from a JavaScript value.
 

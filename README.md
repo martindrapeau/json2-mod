@@ -18,7 +18,7 @@ Require example:
 const JSON2_mod = require('./json2-mod.js');
 
 const json = {"pi": "3.14159265359", "e": "2.7182818284", "prime": [2, 3, 5, 7, 11, 13, 17, 19], "1+6": 7};
-const prettyJson = JSON2_mod.stringify(json, undefined, 2, true, "'");
+const prettyJson = JSON2_mod.stringify(json, undefined, 2, true, 'single');
 console.log(prettyJson);
 ```
 
@@ -27,7 +27,7 @@ Loading in browser example:
 <script type="text/javascript" src="json2-mod.js"></script>
 <script>
     const json = {"pi": "3.14159265359", "e": "2.7182818284", "prime": [2, 3, 5, 7, 11, 13, 17, 19], "1+6": 7};
-    const prettyJson = JSON2_mod.stringify(json, undefined, 2, true, "'");
+    const prettyJson = JSON2_mod.stringify(json, undefined, 2, true, 'single');
     console.log(prettyJson);
 </script>
 ```
@@ -35,8 +35,8 @@ Loading in browser example:
 In both cases, you would get this in the console:
 ```
 {
-  pi: "3.14159265359",
-  e: "2.7182818284",
+  pi: '3.14159265359',
+  e: '2.7182818284',
   prime: [
     2,
     3,
@@ -47,7 +47,7 @@ In both cases, you would get this in the console:
     17,
     19
   ],
-  "1+6": 7
+  '1+6': 7
 }
 ```
 
@@ -59,7 +59,7 @@ In both cases, you would get this in the console:
 - `replacer`: an optional parameter that determines how object values are stringified for objects. It can be a function or an array of strings.
 -`space`: an optional parameter that specifies the indentation of nested structures. If it is omitted, the text will be packed without extra whitespace. If it is a number, it will specify the number of spaces to indent at each level. If it is a string (such as '\t' or '&nbsp;'), it contains the characters used to indent at each level.
 - `dropQuotesOnKeys`: an optional parameter to drop quotes on keys, when possible. Useful to represent a Javascript object. Quotes will be dropped only if the key can be declared as a valid Javascript object. Do note that the output will not be valid JSON, but it will be valid Javascript.
-- `quoteType`: an optional parameter to specify the quote character. Defaults to double quote " however you can overwrite with a single quote '. Do note that the output will not be valid JSON, but it will be valid Javascript.
+- `quoteType`: an optional parameter to specify the quote character. Specify either `double` or `single`. Defaults to `double` quote (") however you can overwrite with a `single` quote ('). Do note that the output will not be valid JSON if you use `single`, but it will be valid Javascript.
 
 This method produces a JSON text from a JavaScript value.
 
