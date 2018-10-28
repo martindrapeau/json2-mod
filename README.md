@@ -5,11 +5,13 @@ Douglas Crawford's JSON2, augmented with options to stringify your JSON. Used to
 
 # Purpose
 Online tool [JSON Beautifier](https://csvjson.com/json_beautifier) provides the ability to print and format JSON as Javascript to make it more compact. You can:
-- Drop quotes on keys and number values
+- Drop quotes on keys
 - Use single quotes instead of double quotes
 
 # Usage
 Unlike the original JSON2 implementation, JSON2_mod does not akways create a global variable. You can use it as a regular CommonJS module. You can also simply load it as a script in the browser in which case, the `JSON2_mod` global will get created.
+
+json2-mod adds 2 extra arguments to function `stringify`: `dropQuotesOnKeys` and `quoteType`.
 
 Require example:
 ```
@@ -146,3 +148,4 @@ myData = JSON.parse('["Date(09/09/2001)"]', function (key, value) {
 # References
 - Original version found here: https://github.com/douglascrockford/JSON-js.
 - JSON format description found here: http://json.org/.
+- JSON Beautifier found here: https://csvjson.com/json_beautifier.
