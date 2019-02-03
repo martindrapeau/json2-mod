@@ -156,4 +156,7 @@ myData = JSON.parse('["Date(09/09/2001)"]', function (key, value) {
 - JSON Beautifier found here: https://csvjson.com/json_beautifier.
 
 # Companion functions
+
 [csv2json](https://github.com/martindrapeau/csvjson-csv2json) to convert your CSV to JSON. [npm package here](https://www.npmjs.com/package/csvjson-csv2json).
+
+[json2csv](https://github.com/martindrapeau/csvjson-csv2json) to convert JSON to CSV. [npm package here](https://www.npmjs.com/package/csvjson-json2csv).
