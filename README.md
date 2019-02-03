@@ -3,6 +3,8 @@ json2-mod
 
 Douglas Crawford's JSON2, augmented with options to stringify your JSON. Used to power JSON Beautifier the online tool found at [www.csvjson.com](https://www.csvjson.com).
 
+[npm package here](https://www.npmjs.com/package/json2-mod).
+
 # Purpose
 Online tool [JSON Beautifier](https://csvjson.com/json_beautifier) provides the ability to print and format JSON as Javascript to make it more compact. You can:
 - Drop quotes on keys
@@ -149,3 +151,6 @@ myData = JSON.parse('["Date(09/09/2001)"]', function (key, value) {
 - Original version found here: https://github.com/douglascrockford/JSON-js.
 - JSON format description found here: http://json.org/.
 - JSON Beautifier found here: https://csvjson.com/json_beautifier.
+
+# Companion functions
+[csv2json](https://github.com/martindrapeau/csvjson-csv2json) to convert your CSV to JSON. [npm package here](https://www.npmjs.com/package/csvjson-csv2json).
