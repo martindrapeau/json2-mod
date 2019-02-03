@@ -1,9 +1,9 @@
-json2-mod
-=========
+CSVJSON JSON2_mod() function
+============================
 
 Douglas Crawford's JSON2, augmented with options to stringify your JSON. Used to power JSON Beautifier the online tool found at [www.csvjson.com](https://www.csvjson.com).
 
-[npm package here](https://www.npmjs.com/package/json2-mod).
+[npm package here](https://www.npmjs.com/package/json2-mod)
 
 # Purpose
 Online tool [JSON Beautifier](https://csvjson.com/json_beautifier) provides the ability to print and format JSON as Javascript to make it more compact. You can:
@@ -15,7 +15,8 @@ Unlike the original JSON2 implementation, JSON2_mod does not always create a glo
 
 json2-mod adds 2 extra arguments to function `stringify`: `dropQuotesOnKeys` and `quoteType`.
 
-Require example:
+## Node example
+
 ```
 const JSON2_mod = require('./json2-mod.js');
 
@@ -24,7 +25,8 @@ const prettyJson = JSON2_mod.stringify(json, undefined, 2, true, 'single');
 console.log(prettyJson);
 ```
 
-Loading in browser example:
+## Browser example
+
 ```
 <script type="text/javascript" src="json2-mod.js"></script>
 <script>
@@ -35,6 +37,7 @@ Loading in browser example:
 ```
 
 In both cases, you would get this in the console:
+
 ```
 {
   pi: '3.14159265359',
@@ -53,9 +56,9 @@ In both cases, you would get this in the console:
 }
 ```
 
-# Documentation
+## Documentation
 
-## Stringifying
+### Stringifying
 `JSON2_mod.stringify(value, replacer, space, dropQuotesOnKeys, quoteType)`
 - `value`: any JavaScript value, usually an object or array.
 - `replacer`: an optional parameter that determines how object values are stringified for objects. It can be a function or an array of strings.
@@ -109,7 +112,7 @@ text = JSON.stringify([new Date()], function (key, value) {
 // text is '["Date(---current time---)"]'
 ```
 
-## Parsing
+### Parsing
 `JSON2_mod.parse(text, reviver)`
 This method parses a JSON text to produce an object or array. It can throw a SyntaxError exception.
 

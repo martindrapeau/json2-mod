@@ -1,7 +1,7 @@
 {
   "name": "json2-mod",
   "description": "Douglas Crawford's JSON2, augmented with extra options to stringify your JSON. Powers JSON Beautifier the online tool found at www.csvjson.com.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Douglas Crockford <douglas@crockford.com>",
   "contributors": ["Martin Drapeau <martindrapeau@gmail.com>"],
   "dependencies": { },
